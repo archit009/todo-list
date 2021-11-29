@@ -1,6 +1,6 @@
 # todo-list
 
-##Simple todo app using Vanilla JS.
+## Simple todo app using Vanilla JS.
 
 This website uses HTML, CSS and JS. 
 
