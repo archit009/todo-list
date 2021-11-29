@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-color: #08AEEA;
+    background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+}
+
+header,form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+}
+
+form input, form button{
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: white;
+    outline: none;
+    
+}
+
+form button{
+    color: #2AF598;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover{
+    color: white;
+    background: #2AF598;
+}
+
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+ul{
+    list-style-type: none;
+    min-width: 30%;
+}
+
+.todo{
+    margin: 1rem;
+    background: white;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    transition: all 0.5s ease;
+    font-weight: 550;
+}
+
+.todo li{
+    flex: 1;
+
+}
+
+.complete-btn, .trash-btn{
+    background: #2AF598;
+    color: white;
+    padding: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.trash-btn{
+     background: #d4553f;
+     
+}
+
+.todo-item{
+    padding: 0rem 0.5rem;
+}
+
+.fa-trash, .fa-check{
+    pointer-events: none;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.4;
+}
+
+.deleted{
+    transform: translateX(7rem)rotateZ(120deg);
+    opacity: 0;
+}
